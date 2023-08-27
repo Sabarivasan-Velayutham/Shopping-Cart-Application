@@ -1,0 +1,15 @@
+<div *ngIf="!resRecvd">
+    <h2>Scan to pay!</h2>
+    <div class="qr">
+        
+        <qrcode cssClass="qr"  [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'" [margin]="0.1"></qrcode>
+        <br>
+        <div *ngIf="status">
+            <h1 >Transaction {{transactionId}} is {{status}}</h1>
+            <h4>Do not refresh the page!</h4>
+        </div>
+        
+    </div>
+</div>
+
+

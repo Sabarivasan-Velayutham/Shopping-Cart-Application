@@ -1,0 +1,45 @@
+ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    border:1px solid black;
+    margin:5%;
+    display:flex;
+    flex-direction: column;
+    overflow:hidden;
+
+}
+
+button{
+    position:absolute;
+    margin-left: 125px;
+    margin-top: 15px;
+    float:right;
+    background-color: goldenrod ;
+    border-radius: 10rem;
+    border:none;
+    outline-style: auto;
+}
+
+button:hover{
+    opacity:0.8;
+    cursor:pointer
+}
+
+.details{
+    display:flex;
+}
+
+h1{
+    align-items: center;
+    text-align: center;
+}
+
+
+

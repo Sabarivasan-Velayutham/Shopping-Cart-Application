@@ -1,0 +1,21 @@
+
+
+img {
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+    height: 18rem;
+}
+
+h2 {
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}

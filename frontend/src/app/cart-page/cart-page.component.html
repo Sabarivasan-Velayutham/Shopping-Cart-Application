@@ -1,0 +1,64 @@
+<h2>Cart</h2>
+
+<div class="container">
+    <ul>
+        <li *ngFor="let x of cart.cartItem">
+            <div>
+                <img [src]="x.item.imgUrl" width=300 height=300 [alt]="x.item.name">
+            </div>
+
+            <div>
+                {{x.item.name}}
+            </div>
+            <div>
+                <input #quantitySelect class="quantitySelect" type="number" min="1" [value]="x.quantity"
+                    (change)="changeQuantity(x,quantitySelect.value)">
+            </div>
+            <div>
+                {{x.item.price|currency}}
+            </div>
+            <div>
+                <button class="remove-button" (click)="removeFromCart(x)">
+                    Remove
+                </button>
+            </div>
+        </li>
+    </ul>
+    <div class="checkout">
+        <div class="item-count">
+            {{ getLocalStorageTotalQty() }}
+        </div>
+        <div class="total-price">
+            {{ getLocalStorageTotalAmt() | currency }}
+        </div>
+        <div>
+            Payment Methods
+            <div class="payoption disabled">Cards</div>
+            <div class="payoption disabled">Boleto</div>
+            <div id="payoption" class="payoption" [class.disabled]="!cart.cartItem.length"
+                [class.selected]="selectedPaymentMethod === 'PIX'" (click)="selectPIX()">
+                PIX
+            </div>
+        </div>
+        <div id="proceedPay" routerLink="/pay"
+            [class.disabled]="!selectedPaymentMethod || selectedPaymentMethod !== 'PIX' || !cart.cartItem.length"
+            (click)="proceedToPayment($event)">
+            Pay
+        </div>
+    </div>
+
+
+
+</div>
+<button id="prevButton" (click)="goToHome()">
+    < catalog</button>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const elt = document.getElementById("payoption");
+                selectedPaymentMethod = 'PIX';
+                if (elt) {
+                    console.log('hi');
+                    elt.style.backgroundColor = "goldenrod";
+                }
+            })
+        </script>

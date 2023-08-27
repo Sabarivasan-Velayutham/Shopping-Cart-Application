@@ -1,0 +1,1 @@
+C:\Users\sabar\Downloads\kafka\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic cart-topic --from-beginning

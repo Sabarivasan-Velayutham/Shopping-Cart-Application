@@ -1,0 +1,21 @@
+<body>
+
+    <h1> Merchant Checkout </h1>
+
+    <form #myForm="ngForm" (ngSubmit)="submitForm(myForm)">
+        <label>Merchant ID:</label>
+        <input type="text" name="merchantId" required [(ngModel)]="formData.merchantId">
+        <span class="asterisk">*</span>
+        <br><br>
+        <label>APIM Gateway ID:</label>
+        <input type="text" name="gatewayId" required [(ngModel)]="formData.gatewayId">
+        <span class="asterisk">*</span>
+        <br><br>
+        <label>Tax ID:</label>
+        <input type="text" name="taxId" required [(ngModel)]="formData.taxId">
+        <span class="asterisk">*</span>
+        <br><br>
+        <!-- Disable the submit button if any of the required fields are empty -->
+        <button id="submit" type="submit" [disabled]="!myForm.valid">Submit</button>
+    </form>
+</body>

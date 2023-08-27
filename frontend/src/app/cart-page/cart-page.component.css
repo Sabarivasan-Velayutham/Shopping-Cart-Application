@@ -1,0 +1,193 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 1.5rem;
+    justify-content: center;
+    align-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex: 3 0;
+    margin: 0.5rem;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+ul li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+ul li:last-child {
+    border: none;
+}
+
+ul li img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100rem;
+    object-fit: cover;
+}
+
+ul li div:not(:first-child) {
+    flex-basis: 18%;
+}
+
+ul li select {
+    width: 4rem;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: goldenrod;
+
+}
+
+ul .remove-button {
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    width: 7rem;
+    border: none;
+    outline: none;
+    padding: 0.5 rem;
+    opacity: 0.7;
+    background-color: goldenrod;
+}
+
+ul .remove-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.checkout {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 24rem;
+    width: 15rem;
+
+    border: 1px solid goldenrod;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.checkout>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+
+ul li .quantitySelect {
+    width: 3rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: goldenrod;
+
+}
+
+.checkout .item-count::before {
+    content: 'Total count:';
+
+}
+
+.checkout .total-price::before {
+    content: 'Final amount:';
+
+}
+
+h2 {
+    margin: 2rem;
+    margin-left: 4rem;
+}
+
+.payoption {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 3px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.payoption:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#prevButton {
+    margin-left: 2%;
+    margin-bottom: 5%;
+    float: left;
+    background-color: black;
+    outline: 0;
+    border-style: groove;
+    border-color: goldenrod;
+    color: white;
+}
+
+#prevButton:hover {
+    background-color: white;
+    color: black;
+}
+
+#proceedPay {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2rem;
+    padding: 2px;
+    cursor: pointer;
+    width: 12.3rem;
+    height: 2rem;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    top: 4.5rem;
+
+    margin-right: -7%;
+    font-size: larger;
+    background-color: goldenrod;
+    color: black;
+}
+
+.payoption.selected {
+    background-color: goldenrod;
+    color: black;
+}
+
+.payoption:focus {
+    background-color: goldenrod;
+}
+
+
+
+
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}

@@ -1,0 +1,11 @@
+
+<div *ngIf="result">
+    <img  src="/assets/success.png">
+    <h2>Yay, your payment was successful</h2>
+</div>
+
+<div *ngIf="!result">
+    <img src="/assets/failure.png">
+    <h2>Oh no, your payment failed</h2>
+    <h4>Transaction ID for reference: {{transactionId}}</h4>
+</div>

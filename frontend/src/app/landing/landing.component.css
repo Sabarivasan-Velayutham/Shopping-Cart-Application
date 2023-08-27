@@ -1,0 +1,41 @@
+body{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form{
+    padding:5rem;
+}
+
+form label{
+    padding:2rem;
+    padding-right: 0.5rem;
+    padding-left:0.7rem;
+    display:inline-block;
+    text-align:right;
+	width:150px
+}
+
+
+#submit{
+    background-color:grey;
+    border-radius: 1rem;
+    font-size:large;
+    width:7rem;
+    color:black;
+}
+
+#submit:hover{
+    background-color: goldenrod;
+}
+
+.asterisk {
+    color: red;
+    padding: 5px;
+  }
+  
+

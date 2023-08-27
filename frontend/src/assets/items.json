@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "price": 200,
+      "name": "sneakers",
+      "imgUrl": "/assets/shoe.webp"
+    },
+    {
+      "id": 2,
+      "price": 149.99,
+      "name": "perfume",
+      "imgUrl": "/assets/perfume.avif"
+    },
+    {
+      "id": 3,
+      "price": 50,
+      "name": "watch",
+      "imgUrl": "/assets/watch.webp"
+    },
+    {
+      "id": 4,
+      "price": 249.99,
+      "name": "handbag",
+      "imgUrl": "/assets/handbag.jpeg"
+    },
+    {
+      "id": 5,
+      "price": 100,
+      "name": "glasses",
+      "imgUrl": "/assets/glasses.jpeg"
+    }
+]
+  

@@ -1,0 +1,15 @@
+<header >
+    
+    <div class="main">
+            <button id="shopyButton" (click)="goToHome()">
+            <h1>shopy.</h1>
+            </button>
+
+            <button id="cartImg" *ngIf="shouldDisplayButton" (click)="goToCart()">
+              <img src="/assets/carts.png" height="50px" width="50px" title="view cart">
+            </button>       
+    </div>
+    
+
+</header>
+

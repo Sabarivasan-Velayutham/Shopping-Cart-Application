@@ -1,0 +1,35 @@
+h1 {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.qr {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+    height: 18rem;
+}
+
+h2 {
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}

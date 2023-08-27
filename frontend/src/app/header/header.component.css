@@ -1,0 +1,31 @@
+header {
+    border-bottom: 10px solid goldenrod;
+    background-color: white;
+    color: black;
+    font-size: x-large;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding: 0.5%
+}
+
+h1 {
+    margin-right: auto;
+}
+
+img {
+    margin-right: 2%;
+}
+
+#shopyButton {
+    border: none;
+    background-color: white;
+}
+
+#cartImg {
+    border: none;
+    background-color: white;
+    margin-left: auto;
+}
