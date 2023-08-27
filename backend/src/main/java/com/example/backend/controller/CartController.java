@@ -1,7 +1,6 @@
 package com.example.backend.controller;
 
 import com.example.backend.payload.Payment;
-import com.example.backend.service.ConsumerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

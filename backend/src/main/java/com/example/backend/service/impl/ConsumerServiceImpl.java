@@ -1,10 +1,8 @@
 package com.example.backend.service.impl;
 
-import com.example.backend.controller.StatusController;
 import com.example.backend.payload.Payment;
 import com.example.backend.repository.CartRepository;
 import com.example.backend.service.ConsumerService;
-import com.example.backend.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;

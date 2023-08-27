@@ -6,15 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
-import com.example.backend.repository.CartRepository;
-
 
 @Service
 public class PaymentServiceImpl implements PaymentService {
     @Autowired
     private KafkaTemplate<String, Payment> kafkaTemplate;
-    @Autowired
-    private CartRepository cartRepository;
 
     @Value("${kafka.topicName}")
     private String topic;
